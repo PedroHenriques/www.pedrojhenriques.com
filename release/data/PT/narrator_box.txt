@@ -1,0 +1,112 @@
+Olá! O meu nome é Pedro Henriques. Eu sou um programador.
+
+Eu construo sites de internet e aplicações de desktop dinâmicas.
+
+Como uma amostra das minhas capacidades, deixe-me contruir este site...à sua frente.
+ 
+Vamos começar!
+ 
+Primeiro, alguns estilos básicos.
+ 
+<style>* {
+	margin: 0px 0px;
+	padding: 0px 0px;
+	font-family: 'Roboto', Arial, sans-serif;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html { font-size: 15px; }
+
+@media (max-width: 800px) {
+	html { font-size: 13px; }
+}
+@media (max-width: 680px) {
+	html { font-size: 12px; }
+}
+@media (max-height: 350px) {
+	html { font-size: 13px; }
+}
+
+body {
+	font-size: 1rem;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+#work_area { padding: 0.5rem; }</style>
+
+A seguir, vamos aplicar transições a tudo!
+
+<style>* {
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}</style>
+
+Por fim, vamos aplicar estilos a esta caixa de texto e dar cor ao texto!
+
+<style>div.flex_item {
+	-webkit-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+div.content {
+	width: 22%;
+	border: 0.1rem solid black;
+	background-color: rgb(39,40,34);
+}
+
+.css_selector { color: rgb(230,159,15); }
+.css_property { color: rgb(102,217,239); }
+.css_value { color: rgb(190,132,242); }
+.css_units { color: rgb(249,38,114); }
+.css_keyword { color: rgb(249,38,114); }</style>
+
+...Deixe-me ajustar-lhe a cor do texto normal.
+ 
+<style>* { color: white; }</style>
+
+Ah...muito melhor!
+
+
+Esta caixa de texto está a ficar muito cheia!
+Está na altura de criar uma nova caixa para os estilos.
+
+<script>createElem("style_box");</script>
+
+Vamos testá-la.
+<goto style_box>
+
+Antes de avançar para a próxima etapa, vou precisar de uma caixa para escrever código JavaScript.
+<goto script_box>
+
+E alguma cor para o texto de JavaScript.
+<goto style_box>
+
+Está na altura de dar a cada caixa um cabeçalho, para conseguirmos saber que caixa é qual.
+<goto script_box>
+
+E depois alguma funcionalidade para esses cabeçalhos.
+<goto script_box>
+
+Enquanto esta aplicação estiver a correr não poderá expandir ou colapsar as caixas de texto, mas pode parar a qualquer momento!
+
+Já não vai ser preciso aplicar mais estilos, por isso vamos colapsar a caixa de estilos para libertar algum espaço no ecrã.
+<goto script_box>
+
+E para concluir esta apresentação, deixe-me contar-lhe um pouco mais sobre mim.
+<goto script_box>
+
+Obrigado por visitar o meu site!
+Espero que tenha gostado tanto como eu gostei de o fazer.
+
+<span class='sub_title'>Notas:</span>
+- Todo o código usado neste site foi construído por mim de raiz, sem recorrer a libraries, frameworks ou qualquer código feito por outros.
+
+<span class='sub_title'>Reconhecimentos:</span>
+- A cor do texto CSS e JavaScript é baseado no tema de cores "Monokai Bright" do programa <a href='http://www.sublimetext.com' target='_blank'>sublime text</a>.
+
+
+Esteja à vontade para expandir e colapsar as caixas de texto! :)

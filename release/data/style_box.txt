@@ -1,0 +1,87 @@
+<style>div.content {
+	margin-right: 0.5rem;
+}
+
+div.text { padding: 0.5rem 0.5rem; }</style>
+<goto narrator_box>
+
+<style>.js_mathoperator,
+.js_logicoperator,
+.js_keyword { color: rgb(249, 38, 114); }
+
+.js_func_word,
+.js_object,
+.js_method { color: rgb(102, 217, 239); }
+
+.js_func_name { color: rgb(166, 226, 42); }
+.js_func_param { color: rgb(253, 151, 31); }
+.js_value { color: rgb(174, 129, 255); }
+
+.js_regexp,
+.js_string { color: rgb(230, 219, 116); }</style>
+<goto narrator_box>
+
+<style byline>div#script_box div.text {
+	font-size: 0.86rem;
+	white-space: pre;
+}</style>
+<goto script_box>
+
+<style byline>div.header {
+	width: 100%;
+	overflow: hidden;
+	padding: 0.5rem;
+	font-weight: bold;
+	border: 2px solid white;
+}
+
+div.header_expanded { height: 8%; }
+
+div.header_text {
+	float: left;
+	margin-right: 1rem;
+	color: rgb(230,159,15);
+}
+
+div.header_button {
+	float: right;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+}
+div.header_button:hover { cursor: pointer; }
+
+div.hb_expanded {
+	position: absolute;
+	right: 0.5rem;
+	top: 1%;
+}
+div.hb_expanded:after { content: '↥'; }
+div.hb_collapsed:after { content: '↧'; }
+
+div.content_collapsed {
+	position: absolute;
+	height: auto;
+	width: auto;
+}
+
+#work_area.work_area_collapsed { padding-top: 3rem; }
+
+div.text_collapsed {
+	position: absolute;
+	height: 0;
+	padding: 0;
+}
+div.text_expanded {
+	height: 92%;
+}
+
+@media (max-height: 450px) {
+	div.header { padding: 0rem 0.5rem; }
+	#work_area.work_area_collapsed { padding-top: 2rem; }
+}
+@media (max-height: 400px) {
+	div.hb_expanded { top: 0%; }
+}</style>
+<goto script_box>

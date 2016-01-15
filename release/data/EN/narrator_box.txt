@@ -1,0 +1,112 @@
+Hello! My name is Pedro Henriques. I'm a programer.
+
+I build dynamic websites and desktop applications.
+
+As a showcase of my skills let me build this website...in front of you.
+ 
+Lets start!
+ 
+First, some basic styles.
+ 
+<style>* {
+	margin: 0px 0px;
+	padding: 0px 0px;
+	font-family: 'Roboto', Arial, sans-serif;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html { font-size: 15px; }
+
+@media (max-width: 800px) {
+	html { font-size: 13px; }
+}
+@media (max-width: 680px) {
+	html { font-size: 12px; }
+}
+@media (max-height: 350px) {
+	html { font-size: 13px; }
+}
+
+body {
+	font-size: 1rem;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+#work_area { padding: 0.5rem; }</style>
+
+Next, lets give everything some transitions!
+
+<style>* {
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}</style>
+
+Finaly, lets style this text box and color code the text!
+
+<style>div.flex_item {
+	-webkit-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+div.content {
+	width: 22%;
+	border: 0.1rem solid black;
+	background-color: rgb(39,40,34);
+}
+
+.css_selector { color: rgb(230,159,15); }
+.css_property { color: rgb(102,217,239); }
+.css_value { color: rgb(190,132,242); }
+.css_units { color: rgb(249,38,114); }
+.css_keyword { color: rgb(249,38,114); }</style>
+
+...Let me adjust the normal text color for you.
+ 
+<style>* { color: white; }</style>
+
+There...much better!
+
+
+This text box is becoming very crowded!
+Time to create a new box for the styles.
+
+<script>createElem("style_box");</script>
+
+Lets test it.
+<goto style_box>
+
+Before I do the next step, I'll need a box to write JavaScript code.
+<goto script_box>
+
+And some color coding for the JavaScript text.
+<goto style_box>
+
+Time to give each box a header, so we can keep track of which box is which.
+<goto script_box>
+
+And then some functionality to those headers.
+<goto script_box>
+
+While the application is running you can't expand or collapse the textboxes, but you can pause at any time!
+
+We are done styling, so let's collapse the style box to clear some space on the screen.
+<goto script_box>
+
+And to conclude this presentation let me tell you a little bit more about myself.
+<goto script_box>
+
+Thank you for visiting my website!
+Hope you enjoyed it as much as I enjoyed making it.
+
+<span class='sub_title'>Notes:</span>
+- All the code used on this website was built by me from scratch, without the use of any libraries, frameworks or other third party code.
+
+<span class='sub_title'>Acknowledgements:</span>
+- CSS and Javascript text color coding based on <a href='http://www.sublimetext.com' target='_blank'>sublime text</a>'s "Monokai Bright" color scheme.
+
+
+Feel free to expand and collapse the textboxes as you see fit! :)

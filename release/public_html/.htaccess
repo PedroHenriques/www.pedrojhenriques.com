@@ -1,0 +1,8 @@
+Options +FollowSymlinks
+RewriteEngine on
+	
+	#
+	# process languages
+	#
+
+RewriteRule ^([^/\.]+)/?$ index.php?lang=$1 [NC,L]

@@ -1,0 +1,43 @@
+<h1>Pedro Henriques</h1>
+Programador desde 2003.
+
+A minha carreira de programador começou como um hobby e com pequenos projectos pessoais. Com tempo começei a apreciar o poder que a programação tem para ajudar a optimizar praticamente todos os aspectos das operações das empresas. Isto levou-me a crescer este hobby e a torná-lo num emprego a tempo inteiro e numa carreira.
+
+Eu adoro todos os aspectos de programação e estou sempre à procura do próximo desafio!
+
+<span class='sub_title'>Disponibilidade:</span>
+	- Actualmente estou disponível para trabalho freelance.
+
+<span class='sub_title'>Contactos:</span>
+	<speed default>- pedro@pedrojhenriques.com</speed>
+
+
+<span class='sub_title'>As linguagens de programação que conheço são:</span>
+	<byline>- C/C++
+	- C#
+	- Java
+	- Ruby
+	- Python
+	- Visual Basic (VB) e Visual Basic for Applications (VBA)
+
+	- PHP
+	- ASP
+	- JavaScript</byline>
+
+Eu prefiro escrever todo o código de raiz, à medida para o projecto em curso, mas também tenho conhecimento de várias frameworks e libraries, como por exemplo:
+	<byline>- Rails (Ruby on Rails)
+	- Laravel
+	- Jquery</byline>
+
+<span class='sub_title'>Projectos Seleccionados:</span>
+	<byline>- <b><a href='http://www.bookthatforme.com' target='_blank'>BookThatForMe</a>:</b> Uma aplicação online grátis, que facilita a gestão de calendários entre várias pessoas.
+
+<span class='sub_title'>Ferramentas:</span>
+	<byline>- <b>IDE</b>: Visual Studio, Eclipse
+	- <b>Editor de Texto</b>: Sublime Text
+
+	- <b>Pré-processador CSS</b>: SASS, LESS
+	- <b>Minimizador CSS/JS</b>: <a href='https://github.com/PedroHenriques/Minimizer_CSS-JS' target='_blank'>github.com/PedroHenriques/Minimizer_CSS-JS</a></byline>
+
+Pode encontrar links, com mais informação sobre mim e o meu trabalho, no fundo da página.
+<goto narrator_box>

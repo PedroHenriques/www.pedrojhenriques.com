@@ -1,0 +1,37 @@
+{
+	"title" :
+	{
+		"EN" : "Pedro Henriques | Web and Desktop Programing",
+		"PT" : "Pedro Henriques | Programação Web e de Desktop"
+	},
+
+	"description" :
+	{
+		"EN" : "Web and Desktop Programing Services",
+		"PT" : "Serviços de Programação Web e Desktop"
+	},
+
+	"keywords" :
+	{
+		"EN" : "web development, programing, php, ruby on rails, javascript, c++, c#, ruby, self building website",
+		"PT" : "web development, programing, php, ruby on rails, javascript, c++, c#, ruby, self building website"
+	},
+
+	"pause" :
+	{
+		"EN" : "Pause",
+		"PT" : "Pausar"
+	},
+
+	"resume" :
+	{
+		"EN" : "Resume",
+		"PT" : "Continuar"
+	},
+
+	"source_code" :
+	{
+		"EN" : "Source Code",
+		"PT" : "Código"
+	}
+}

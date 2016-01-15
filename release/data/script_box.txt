@@ -1,0 +1,133 @@
+<goto narrator_box>
+<goto style_box>
+<script byline>function addHeaders(id) {
+	if (id == null) {
+		var elems = document.querySelectorAll("div.content");
+	}else{
+		var elems = [tagDivs[id]];
+	}
+
+	for (var i = 0; i &lt; elems.length; i++) {
+		if (elems[i].childNodes[0].className.match(/header/i) != null) {
+			continue;
+		}
+
+		var headerDiv = document.createElement("div");
+		headerDiv.className = "header header_expanded";
+		var textDiv = document.createElement("div");
+		textDiv.className = "header_text";
+		textDiv.innerHTML = elems[i].id.toUpperCase();
+		headerDiv.appendChild(textDiv);
+		var buttonsDiv = document.createElement("div");
+		buttonsDiv.className = "header_button hb_expanded";
+		headerDiv.appendChild(buttonsDiv);
+
+		elems[i].insertBefore(headerDiv, elems[i].childNodes[0]);
+
+		if (typeof addHeaderClickEvent == "function") {
+			addHeaderClickEvent(id);
+		}
+	}
+	scrollBoxesToBottom();
+}</script>
+<goto style_box>
+
+<script>addHeaders();</script>
+<goto narrator_box>
+
+<script byline>function positionCollapsedTextboxes() {
+	var collapsedElems = document.querySelectorAll("div.content_collapsed");
+
+	if (collapsedElems.length == 0) { return; }
+
+	var rootFontSize = parseFloat(window.getComputedStyle(document.getElementsByTagName("html")[0], null).fontSize);
+	var sumLeft = 0;
+	var leftValue = 0;
+
+	for (var i = 0; i &lt; collapsedElems.length; i++) {
+		collapsedElems[i].style.top = 0;
+		leftValue = sumLeft + 0.5*rootFontSize;
+		sumLeft = leftValue + parseFloat(window.getComputedStyle(collapsedElems[i], null).width);
+
+		collapsedElems[i].style.left = leftValue/rootFontSize + "rem";
+	};
+}
+
+function textboxExpandCollapse(id, onlyExpand) {
+	var textboxElem = tagDivs[id];
+	var headerElem = textboxElem.firstElementChild;
+	var headerButtonElem = headerElem.lastElementChild;
+	var textElem = textboxElem.lastElementChild;
+
+	if (cssTransitionDur == null) { getTransitionDuration(); }
+
+	if (headerButtonElem.className.match(/hb_expanded/i) != null && !onlyExpand) {
+		if (divWorkArea.className.match(/work_area_collapsed/i) == null) {
+			divWorkArea.className += " work_area_collapsed";
+		}
+
+		headerButtonElem.className = headerButtonElem.className.replace(/hb_expanded/i, "hb_collapsed");
+		textElem.className = textElem.className.replace(/text_expanded/i, "text_collapsed");
+		headerElem.className = headerElem.className.replace(/header_expanded/i, "header_collapsed");
+
+		if (!isPaused) { filesContent[id]["expanded"] = false; }
+
+		window.setTimeout(function() {
+			var textboxRect = textboxElem.getBoundingClientRect();
+			textboxElem.className += " content_collapsed";
+			textboxElem.style.left = textboxRect.left + "px";
+			textboxElem.style.top = textboxRect.top + "px";
+			positionCollapsedTextboxes();
+		}, cssTransitionDur);
+	}else if (headerButtonElem.className.match(/hb_collapsed/i) != null) {
+		textboxElem.className = textboxElem.className.replace(/content_collapsed/i, "").trim();
+		textboxElem.style.left = "";
+		textboxElem.style.top = "";
+		headerElem.className = headerElem.className.replace(/header_collapsed/i, "header_expanded");
+		textElem.className = textElem.className.replace(/text_collapsed/i, "text_expanded");
+		headerButtonElem.className = headerButtonElem.className.replace(/hb_collapsed/i, "hb_expanded");
+
+		if (document.querySelectorAll("div.hb_collapsed").length == 0) {
+			divWorkArea.className = divWorkArea.className.replace(/work_area_collapsed/i, "").trim();
+		}
+
+		if (!isPaused) { filesContent[id]["expanded"] = true; }
+		positionCollapsedTextboxes();
+		
+		window.setTimeout(function() {
+			scrollBoxesToBottom(id);
+		}, cssTransitionDur);
+	}
+}
+
+function headerEventHandler(e) {
+	if (e == null) { return; }
+
+	textboxExpandCollapse(e.target.parentElement.parentElement.id, false);
+}
+
+function addHeaderClickEvent(id) {
+	if (id == null) {
+		var elems = document.querySelectorAll("div.header_button");
+	}else{
+		var elems = [tagDivs[id]];
+	}
+
+	for (var i = 0; i &lt; elems.length; i++) {
+		if (elems[i].addEventListener) {
+			elems[i].addEventListener("click", function(e) { headerEventHandler(e); }, false);
+		}else if (elems[i].attachEvent){
+			elems[i].attachEvent("onclick", function(e) { headerEventHandler(e); });
+		}
+	}
+}
+
+addHeaderClickEvent();</script>
+<goto narrator_box>
+
+<script>textboxExpandCollapse("style_box", false);</script>
+<goto narrator_box>
+
+<script>createElem("about_box");</script>
+<script>textboxExpandCollapse("script_box", false);</script>
+<goto about_box>
