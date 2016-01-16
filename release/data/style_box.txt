@@ -1,4 +1,8 @@
-<style>div.content {
+<style>div#style_box div.text {
+	white-space: pre;
+}
+
+div.content {
 	margin-right: 0.5rem;
 }
 

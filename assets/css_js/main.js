@@ -715,8 +715,8 @@ function scrollBoxesToBottom(elemId) {
 function setDefaultSpeeds() {
 	speeds = {
 		"default": 20,
-		"styleByChar": 0,
-		"scriptByChar": 0,
+		"styleByChar": 10,
+		"scriptByChar": 10,
 		"styleByLine": 100,
 		"scriptByLine": 100,
 		"textByLine": 100,
