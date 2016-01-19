@@ -1,13 +1,13 @@
-Hello! My name is Pedro Henriques. I'm a programer.
+Hello! My name is Pedro Henriques. I'm a programmer.
 
 I build dynamic websites and desktop applications.
 
 As a showcase of my skills let me build this website...in front of you.
- 
+
 Lets start!
- 
+
 First, some basic styles.
- 
+
 <style>* {
 	margin: 0px 0px;
 	padding: 0px 0px;
@@ -48,7 +48,7 @@ Next, lets give everything some transitions!
 	transition: all 1s ease-in-out;
 }</style>
 
-Finaly, lets style this text box and color code the text!
+Finally, lets style this text box and color code the text!
 
 <style>div.flex_item {
 	-webkit-flex: 1 1 auto;
@@ -68,7 +68,7 @@ div.content {
 .css_keyword { color: rgb(249,38,114); }</style>
 
 ...Let me adjust the normal text color for you.
- 
+
 <style>* { color: white; }</style>
 
 There...much better!
