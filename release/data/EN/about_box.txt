@@ -1,9 +1,9 @@
 <h1>Pedro Henriques</h1>
 Programmer since 2003.
 
-My programing career started as a hobby and with small personal projects. With time I started to appreciate the power of programing to help optimize and automate nearly every aspect of company's operations. This led me to grow my hobby into a full time job and career.
+My programming career started as a hobby and with small personal projects. With time I started to appreciate the power of programming to help optimize and automate nearly every aspect of company's operations. This led me to grow my hobby into a full time job and career.
 
-I love all aspects of programing and I'm always searching for the next challenge!
+I love all aspects of programming and I'm always searching for the next challenge!
 
 <span class='sub_title'>Availability:</span>
 	- Currently I'm available for freelance work.
@@ -12,7 +12,7 @@ I love all aspects of programing and I'm always searching for the next challenge
 	<speed default>- pedro@pedrojhenriques.com</speed>
 
 
-<span class='sub_title'>The programing languages I'm familiar with are:</span>
+<span class='sub_title'>The programming languages I'm familiar with are:</span>
 	<byline>- C/C++
 	- C#
 	- Java

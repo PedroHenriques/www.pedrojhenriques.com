@@ -94,7 +94,7 @@ Time to give each box a header, so we can keep track of which box is which.
 And then some functionality to those headers.
 <goto script_box>
 
-While the application is running you can't expand or collapse the textboxes, but you can pause at any time!
+While the application is running you can't expand or collapse the text boxes, but you can pause at any time!
 
 We are done styling, so let's collapse the style box to clear some space on the screen.
 <goto script_box>
@@ -112,4 +112,4 @@ Hope you enjoyed it as much as I enjoyed making it.
 - CSS and Javascript text color coding based on <a href='http://www.sublimetext.com' target='_blank'>sublime text</a>'s "Monokai Bright" color scheme.
 
 
-Feel free to expand and collapse the textboxes as you see fit! :)
+Feel free to expand and collapse the text boxes as you see fit! :)

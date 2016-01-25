@@ -19,7 +19,7 @@ $json_a = json_decode($json_file, true);
     <meta name="keywords" content=<?php echo($json_a["keywords"][$lang]); ?> />
 
     <title><?php echo($json_a["title"][$lang]); ?></title>
-    
+
     <link rel="icon" type="image/png" sizes='16x16' href="/assets/images/favicon_16x16.png"/>
     <link rel="icon" type="image/png" sizes='32x32' href="/assets/images/favicon_32x32.png"/>
     <link rel="icon" type="image/png" sizes='96x96' href="/assets/images/favicon_96x96.png"/>
@@ -34,7 +34,7 @@ $json_a = json_decode($json_file, true);
         <div id='work_area' class='no_events'></div> <!-- end of work_area -->
         <div id='footer'>
             <div id='footer_controls'>
-                <span><strong>Speeds:</strong></span>
+                <span><strong><?php echo($json_a["speeds"][$lang]); ?></strong></span>
                 <span class='speed selected' onclick='setSpeed(1);'>&gt;</span>
                 <span class='speed clickable' onclick='setSpeed(2);'>&gt;&gt;</span>
                 <span class='speed clickable' onclick='setSpeed(3);'>&gt;&gt;&gt;</span>

@@ -2,12 +2,12 @@ Olá! O meu nome é Pedro Henriques. Eu sou um programador.
 
 Eu construo sites de internet e aplicações de desktop dinâmicas.
 
-Como uma amostra das minhas capacidades, deixe-me contruir este site...à sua frente.
- 
+Como uma amostra das minhas capacidades, deixe-me construir este site...à sua frente.
+
 Vamos começar!
- 
+
 Primeiro, alguns estilos básicos.
- 
+
 <style>* {
 	margin: 0px 0px;
 	padding: 0px 0px;
@@ -68,7 +68,7 @@ div.content {
 .css_keyword { color: rgb(249,38,114); }</style>
 
 ...Deixe-me ajustar-lhe a cor do texto normal.
- 
+
 <style>* { color: white; }</style>
 
 Ah...muito melhor!

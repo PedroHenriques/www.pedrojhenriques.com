@@ -17,6 +17,12 @@
 		"PT" : "web development, programing, php, ruby on rails, javascript, c++, c#, ruby, self building website"
 	},
 
+	"speeds" :
+	{
+		"EN" : "Speeds:",
+		"PT" : "Velocidades:"
+	},
+
 	"pause" :
 	{
 		"EN" : "Pause",

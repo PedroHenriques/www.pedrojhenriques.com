@@ -1,7 +1,7 @@
 <h1>Pedro Henriques</h1>
 Programador desde 2003.
 
-A minha carreira de programador começou como um hobby e com pequenos projectos pessoais. Com tempo começei a apreciar o poder que a programação tem para ajudar a optimizar praticamente todos os aspectos das operações das empresas. Isto levou-me a crescer este hobby e a torná-lo num emprego a tempo inteiro e numa carreira.
+A minha carreira de programador começou como um hobby e com pequenos projectos pessoais. Com tempo comecei a apreciar o poder que a programação tem para ajudar a optimizar praticamente todos os aspectos das operações das empresas. Isto levou-me a crescer este hobby e a torná-lo num emprego a tempo inteiro e numa carreira.
 
 Eu adoro todos os aspectos de programação e estou sempre à procura do próximo desafio!
 
