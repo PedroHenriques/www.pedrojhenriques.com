@@ -5,6 +5,12 @@
 		"PT" : "Pedro Henriques | Programação Web e de Desktop"
 	},
 
+	"copyright" :
+	{
+		"PT" : "Copyright 2016 - Pedro Henriques. Todos os direitos reservados.",
+		"EN" : "Copyright 2016 - Pedro Henriques. All rights reserved."
+	},
+
 	"description" :
 	{
 		"EN" : "Web and Desktop Programing Services",

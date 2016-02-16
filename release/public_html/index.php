@@ -17,6 +17,8 @@ $json_a = json_decode($json_file, true);
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="description" content=<?php echo($json_a["description"][$lang]); ?> />
     <meta name="keywords" content=<?php echo($json_a["keywords"][$lang]); ?> />
+	<meta name="author" content="http://www.pedrojhenriques.com">
+	<meta name="copyright" content="<?php echo($json_a["copyright"][$lang]); ?>">
 
     <title><?php echo($json_a["title"][$lang]); ?></title>
 
@@ -47,6 +49,7 @@ $json_a = json_decode($json_file, true);
             </div>
             <div id='footer_links'>
                 <a <?php echo("href='http://www.linkedin.com/in/pedrojhenriques/".strtolower($lang)."'"); ?> target='_blank'>LinkedIn</a>
+                <a href='https://codepen.io/PedroHenriques/' target='_blank'>CodePen</a>
                 <a href='https://github.com/PedroHenriques/' target='_blank'>GitHub</a>
                 <a href='https://github.com/PedroHenriques/www.pedrojhenriques.com' target='_blank'><?php echo($json_a["source_code"][$lang]); ?></a>
             </div>

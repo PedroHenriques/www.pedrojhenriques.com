@@ -30,14 +30,18 @@ Eu prefiro escrever todo o código de raiz, à medida para o projecto em curso, 
 	- Jquery</byline>
 
 <span class='sub_title'>Projectos Seleccionados:</span>
-	<byline>- <b><a class='blue' href='http://www.bookthatforme.com' target='_blank'>Book That For Me</a>:</b> Uma aplicação online grátis, que facilita a gestão de calendários entre várias pessoas.
+	<byline>- <b class='blue'>Book That For Me</b> (<a href='http://www.bookthatforme.com' target='_blank'>www.BookThatForMe.com</a>): Uma aplicação online grátis, que facilita a gestão de calendários entre várias pessoas.
+	Criado usando PHP, MySql e Javascript.
+
+	- <b class='blue'>Turn On Consulting</b> (<a href='http://www.turnonconsulting.com' target='_blank'>www.TurnOnConsulting.com</a>): Uma empresa de consultoria focada em optimizações para aumentar a performance interna das empresas.
+	Criado usando PHP e Javascript.
 
 <span class='sub_title'>Ferramentas:</span>
 	<byline>- <b class='blue'>IDE</b>: Visual Studio, Eclipse
 	- <b class='blue'>Editor de Texto</b>: Atom, Sublime Text
 
 	- <b class='blue'>SCV</b>: Git
-	- <b class='blue'>Pré-processador CSS</b>: SASS, LESS
+	- <b class='blue'>Pré-processador</b>: SASS, LESS
 	- <b class='blue'>Minimizador CSS/JS</b>: <a href='https://github.com/PedroHenriques/Minimizer_CSS-JS' target='_blank'>github.com/PedroHenriques/Minimizer_CSS-JS</a></byline>
 
 Pode encontrar links, com mais informação sobre mim e o meu trabalho, no fundo da página.

@@ -1,6 +1,12 @@
 Options +FollowSymlinks
 RewriteEngine on
-	
+
+	#
+	# no WWW rule
+	#
+RewriteCond %{HTTP_HOST} ^pedrojhenriques.com [NC]
+RewriteRule ^(.*)$ http://www.pedrojhenriques.com/$1 [L,R=302]
+
 	#
 	# process languages
 	#

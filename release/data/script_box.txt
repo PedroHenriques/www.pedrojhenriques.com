@@ -4,7 +4,7 @@
 	if (id == null) {
 		var elems = document.querySelectorAll("div.content");
 	}else{
-		var elems = [tagDivs[id]];
+		var elems = [tag_divs_[id]];
 	}
 
 	for (var i = 0; i &lt; elems.length; i++) {
@@ -12,17 +12,17 @@
 			continue;
 		}
 
-		var headerDiv = document.createElement("div");
-		headerDiv.className = "header header_expanded";
-		var textDiv = document.createElement("div");
-		textDiv.className = "header_text";
-		textDiv.innerHTML = elems[i].id.toUpperCase();
-		headerDiv.appendChild(textDiv);
-		var buttonsDiv = document.createElement("div");
-		buttonsDiv.className = "header_button hb_expanded";
-		headerDiv.appendChild(buttonsDiv);
+		var header_div = document.createElement("div");
+		header_div.className = "header header_expanded";
+		var text_div = document.createElement("div");
+		text_div.className = "header_text";
+		text_div.innerHTML = elems[i].id.toUpperCase();
+		header_div.appendChild(text_div);
+		var buttons_div = document.createElement("div");
+		buttons_div.className = "header_button hb_expanded";
+		header_div.appendChild(buttons_div);
 
-		elems[i].insertBefore(headerDiv, elems[i].childNodes[0]);
+		elems[i].insertBefore(header_div, elems[i].childNodes[0]);
 
 		if (typeof addHeaderClickEvent == "function") {
 			addHeaderClickEvent(id);
@@ -36,67 +36,67 @@
 <goto narrator_box>
 
 <script byline>function positionCollapsedTextboxes() {
-	var collapsedElems = document.querySelectorAll("div.content_collapsed");
+	var collapsed_elems = document.querySelectorAll("div.content_collapsed");
 
-	if (collapsedElems.length == 0) { return; }
+	if (collapsed_elems.length == 0) { return; }
 
-	var rootFontSize = parseFloat(window.getComputedStyle(document.getElementsByTagName("html")[0], null).fontSize);
-	var sumLeft = 0;
-	var leftValue = 0;
+	var root_font_size = parseFloat(window.getComputedStyle(document.getElementsByTagName("html")[0], null).fontSize);
+	var sum_left = 0;
+	var left_value = 0;
 
-	for (var i = 0; i &lt; collapsedElems.length; i++) {
-		collapsedElems[i].style.top = 0;
-		leftValue = sumLeft + 0.5*rootFontSize;
-		sumLeft = leftValue + parseFloat(window.getComputedStyle(collapsedElems[i], null).width);
+	for (var i = 0; i &lt; collapsed_elems.length; i++) {
+		collapsed_elems[i].style.top = 0;
+		left_value = sum_left + 0.5*root_font_size;
+		sum_left = left_value + parseFloat(window.getComputedStyle(collapsed_elems[i], null).width);
 
-		collapsedElems[i].style.left = leftValue/rootFontSize + "rem";
+		collapsed_elems[i].style.left = left_value/root_font_size + "rem";
 	};
 }
 
-function textboxExpandCollapse(id, onlyExpand) {
-	var textboxElem = tagDivs[id];
-	var headerElem = textboxElem.firstElementChild;
-	var headerButtonElem = headerElem.lastElementChild;
-	var textElem = textboxElem.lastElementChild;
+function textboxExpandCollapse(id, only_expand) {
+	var textbox_elem = tag_divs_[id];
+	var header_elem = textbox_elem.firstElementChild;
+	var header_button_elem = header_elem.lastElementChild;
+	var text_elem = textbox_elem.lastElementChild;
 
-	if (cssTransitionDur == null) { getTransitionDuration(); }
+	if (css_transition_dur_ == null) { getTransitionDuration(); }
 
-	if (headerButtonElem.className.match(/hb_expanded/i) != null && !onlyExpand) {
-		if (divWorkArea.className.match(/work_area_collapsed/i) == null) {
-			divWorkArea.className += " work_area_collapsed";
+	if (header_button_elem.className.match(/hb_expanded/i) != null && !only_expand) {
+		if (div_work_area_.className.match(/work_area_collapsed/i) == null) {
+			div_work_area_.className += " work_area_collapsed";
 		}
 
-		headerButtonElem.className = headerButtonElem.className.replace(/hb_expanded/i, "hb_collapsed");
-		textElem.className = textElem.className.replace(/text_expanded/i, "text_collapsed");
-		headerElem.className = headerElem.className.replace(/header_expanded/i, "header_collapsed");
+		header_button_elem.className = header_button_elem.className.replace(/hb_expanded/i, "hb_collapsed");
+		text_elem.className = text_elem.className.replace(/text_expanded/i, "text_collapsed");
+		header_elem.className = header_elem.className.replace(/header_expanded/i, "header_collapsed");
 
-		if (!isPaused) { filesContent[id]["expanded"] = false; }
+		if (!is_paused_) { files_content_[id]["expanded"] = false; }
 
 		window.setTimeout(function() {
-			var textboxRect = textboxElem.getBoundingClientRect();
-			textboxElem.className += " content_collapsed";
-			textboxElem.style.left = textboxRect.left + "px";
-			textboxElem.style.top = textboxRect.top + "px";
+			var textbox_rect = textbox_elem.getBoundingClientRect();
+			textbox_elem.className += " content_collapsed";
+			textbox_elem.style.left = textbox_rect.left + "px";
+			textbox_elem.style.top = textbox_rect.top + "px";
 			positionCollapsedTextboxes();
-		}, cssTransitionDur);
-	}else if (headerButtonElem.className.match(/hb_collapsed/i) != null) {
-		textboxElem.className = textboxElem.className.replace(/content_collapsed/i, "").trim();
-		textboxElem.style.left = "";
-		textboxElem.style.top = "";
-		headerElem.className = headerElem.className.replace(/header_collapsed/i, "header_expanded");
-		textElem.className = textElem.className.replace(/text_collapsed/i, "text_expanded");
-		headerButtonElem.className = headerButtonElem.className.replace(/hb_collapsed/i, "hb_expanded");
+		}, css_transition_dur_);
+	}else if (header_button_elem.className.match(/hb_collapsed/i) != null) {
+		textbox_elem.className = textbox_elem.className.replace(/content_collapsed/i, "").trim();
+		textbox_elem.style.left = "";
+		textbox_elem.style.top = "";
+		header_elem.className = header_elem.className.replace(/header_collapsed/i, "header_expanded");
+		text_elem.className = text_elem.className.replace(/text_collapsed/i, "text_expanded");
+		header_button_elem.className = header_button_elem.className.replace(/hb_collapsed/i, "hb_expanded");
 
 		if (document.querySelectorAll("div.hb_collapsed").length == 0) {
-			divWorkArea.className = divWorkArea.className.replace(/work_area_collapsed/i, "").trim();
+			div_work_area_.className = div_work_area_.className.replace(/work_area_collapsed/i, "").trim();
 		}
 
-		if (!isPaused) { filesContent[id]["expanded"] = true; }
+		if (!is_paused_) { files_content_[id]["expanded"] = true; }
 		positionCollapsedTextboxes();
-		
+
 		window.setTimeout(function() {
 			scrollBoxesToBottom(id);
-		}, cssTransitionDur);
+		}, css_transition_dur_);
 	}
 }
 
@@ -110,7 +110,7 @@ function addHeaderClickEvent(id) {
 	if (id == null) {
 		var elems = document.querySelectorAll("div.header_button");
 	}else{
-		var elems = [tagDivs[id]];
+		var elems = [tag_divs_[id]];
 	}
 
 	for (var i = 0; i &lt; elems.length; i++) {

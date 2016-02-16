@@ -30,14 +30,18 @@ I prefer to write all the code myself, tailored to the project at hands, but I'm
 	- Jquery</byline>
 
 <span class='sub_title'>Selected Projects:</span>
-	<byline>- <b><a class='blue' href='http://www.bookthatforme.com' target='_blank'>Book That For Me</a>:</b> A free online application that makes managing calendars between several people easy.
+	<byline>- <b class='blue'>Book That For Me</b> (<a href='http://www.bookthatforme.com' target='_blank'>www.BookThatForMe.com</a>): A free online application that makes managing calendars between several people easy.
+	Built using PHP, MySql and Javascript.
+
+	- <b class='blue'>Turn On Consulting</b> (<a href='http://www.turnonconsulting.com' target='_blank'>www.TurnOnConsulting.com</a>): A consulting company focused on optimization to turn on companies' internal performance.
+	Built using PHP and Javascript.
 
 <span class='sub_title'>Tools:</span>
 	<byline>- <b class='blue'>IDE</b>: Visual Studio, Eclipse
 	- <b class='blue'>Text Editor</b>: Atom, Sublime Text
 
 	- <b class='blue'>VCS</b>: Git
-	- <b class='blue'>CSS Pre-processor</b>: SASS, LESS
+	- <b class='blue'>Pre-processor</b>: SASS, LESS
 	- <b class='blue'>CSS/JS Minimizer</b>: <a href='https://github.com/PedroHenriques/Minimizer_CSS-JS' target='_blank'>github.com/PedroHenriques/Minimizer_CSS-JS</a></byline>
 
 You can find links with more information about myself and my work at the bottom of the page.
