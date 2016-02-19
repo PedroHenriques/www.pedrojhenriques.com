@@ -16,8 +16,8 @@ Eu adoro todos os aspectos de programação e estou sempre à procura do próxim
 	<byline>- C/C++
 	- C#
 	- Java
-	- Ruby
 	- Python
+	- Ruby
 	- Visual Basic (VB) e Visual Basic for Applications (VBA)
 
 	- PHP
@@ -30,11 +30,11 @@ Eu prefiro escrever todo o código de raiz, à medida para o projecto em curso, 
 	- Jquery</byline>
 
 <span class='sub_title'>Projectos Seleccionados:</span>
-	<byline>- <b class='blue'>Book That For Me</b> (<a href='http://www.bookthatforme.com' target='_blank'>www.BookThatForMe.com</a>): Uma aplicação online grátis, que facilita a gestão de calendários entre várias pessoas.
-	Criado usando PHP, MySql e Javascript.
-
-	- <b class='blue'>Turn On Consulting</b> (<a href='http://www.turnonconsulting.com' target='_blank'>www.TurnOnConsulting.com</a>): Uma empresa de consultoria focada em optimizações para aumentar a performance interna das empresas.
+	<byline>- <b class='blue'>Turn On Consulting</b> (<a href='http://www.turnonconsulting.com' target='_blank'>www.TurnOnConsulting.com</a>): Uma empresa de consultoria focada em optimizações para aumentar a performance interna de empresas.
 	Criado usando PHP e Javascript.
+
+	- <b class='blue'>Book That For Me</b> (<a href='http://www.bookthatforme.com' target='_blank'>www.BookThatForMe.com</a>): Uma aplicação online grátis, que facilita a gestão de calendários entre várias pessoas.
+	Criado usando PHP, MySql e Javascript.</byline>
 
 <span class='sub_title'>Ferramentas:</span>
 	<byline>- <b class='blue'>IDE</b>: Visual Studio, Eclipse
