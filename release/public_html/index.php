@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-// FIXME: turn this back on!!
-// error_reporting(0);
+error_reporting(0);
 
 // require the php file with all the custom functions
 require(dirname(dirname(__FILE__))."/code/functions.php");
