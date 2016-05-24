@@ -41,6 +41,12 @@
 		"PT" : "Continuar"
 	},
 
+	"skip" :
+	{
+		"EN" : "Skip",
+		"PT" : "Fim"
+	},
+
 	"source_code" :
 	{
 		"EN" : "Source Code",

@@ -1,22 +1,27 @@
 <?php
 error_reporting(0);
 
-// build the path for a language insensitive file
-$path = "../../data/".$_GET["fn"].".txt";
-// check if the file exists in the data folder (not language dependent)
-if (file_exists($path)) {
-	// get and return th file's content
-	echo(file_get_contents($path));
+// require the php file with all the custom functions
+require(dirname(dirname(dirname(__FILE__)))."/code/functions.php");
+
+// grab the file name
+if (isset($_GET["fn"])) {
+	$file_name = $_GET["fn"];
 }else{
-	// build the path for a language sensitive file
-	$path = "../../data/".$_GET["lang"]."/".$_GET["fn"].".txt";
-	if (file_exists($path)) {
-		// get and return th file's content
-		echo(file_get_contents($path));
-	}else{
-		// didn't find the file, so return empty string
-		echo("");
-	}
+	// no file name was passed, so echo an empty stringe
+	echo("");
+	exit;
 }
+
+// grab the language
+if (isset($_GET["lang"])) {
+	$lang = $_GET["lang"];
+}else{
+	// default to english
+	$lang = "EN";
+}
+
+// grab the file's content and echo it
+echo(getFileContent($file_name, $lang));
 
 ?>

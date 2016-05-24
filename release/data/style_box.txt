@@ -4,9 +4,13 @@
 
 div.content {
 	margin-right: 0.5rem;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
 }
 
-div.text { padding: 0.5rem 0.5rem; }</style>
+div.text { padding: 0.5rem; }</style>
 <goto narrator_box>
 
 <style>.js_mathoperator,
@@ -33,41 +37,47 @@ div.text { padding: 0.5rem 0.5rem; }</style>
 
 <style byline>div.header {
 	width: 100%;
+	height: 2.3rem;
 	overflow: hidden;
-	padding: 0.5rem;
+	padding: 0rem 0.5rem;
+	font-size: 1.2rem;
 	font-weight: bold;
-	border: 2px solid white;
+	border: 0.1rem solid white;
 }
 
-div.header_expanded { height: 8%; }
+div.header_expanded {
+	position: relative;
+}
+
+div.header_collapsed {
+	position: absolute;
+	top: 0;
+}
 
 div.header_text {
-	float: left;
-	margin-right: 1rem;
+	position: absolute;
+	top: 0.5rem;
 	color: rgb(230,159,15);
+	line-height: 1;
 }
 
 div.header_button {
-	float: right;
-	-webkit-transform: scale(1.5);
-	-moz-transform: scale(1.5);
-	-o-transform: scale(1.5);
-	transform: scale(1.5);
+	line-height: 1;
 }
 div.header_button:hover { cursor: pointer; }
 
-div.hb_expanded {
+div.hb_expanded,
+div.hb_collapsed {
 	position: absolute;
 	right: 0.5rem;
-	top: 1%;
+	top: 0.5rem;
 }
 div.hb_expanded:after { content: '↥'; }
 div.hb_collapsed:after { content: '↧'; }
 
 div.content_collapsed {
-	position: absolute;
-	height: auto;
-	width: auto;
+	height: 2.4rem;
+	overflow: hidden;
 }
 
 #work_area.work_area_collapsed { padding-top: 3rem; }
@@ -76,16 +86,10 @@ div.text_collapsed {
 	position: absolute;
 	height: 0;
 	padding: 0;
+	top: 2.3rem;
 }
 div.text_expanded {
-	height: 92%;
-}
-
-@media (max-height: 450px) {
-	div.header { padding: 0rem 0.5rem; }
-	#work_area.work_area_collapsed { padding-top: 2rem; }
-}
-@media (max-height: 400px) {
-	div.hb_expanded { top: 0%; }
+	position: relative;
+	height: 100%;
 }</style>
 <goto script_box>

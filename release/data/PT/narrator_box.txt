@@ -22,14 +22,17 @@ html { font-size: 18px; }
 @media (max-width: 950px) {
 	html { font-size: 15px; }
 }
-@media (max-width: 800px) {
+@media (max-width: 800px), (max-height: 450px) {
 	html { font-size: 13px; }
 }
 @media (max-width: 680px) {
 	html { font-size: 12px; }
 }
-@media (max-height: 350px) {
-	html { font-size: 13px; }
+@media (max-width: 625px) {
+	html { font-size: 11px; }
+}
+@media (max-width: 350px) {
+	html { font-size: 10px; }
 }
 
 body {
@@ -83,7 +86,8 @@ Vamos testá-la.
 <goto style_box>
 
 Antes de avançar para a próxima etapa, vou precisar de uma caixa para escrever código JavaScript.
-<goto script_box>
+
+<script>createElem("script_box");</script>
 
 E alguma cor para o texto de JavaScript.
 <goto style_box>

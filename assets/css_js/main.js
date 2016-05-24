@@ -1,7 +1,8 @@
 // runs once the document is done loading
 // sets basic parameters used to run the application
-// then starts the application
-function init() {
+// then starts the application (if building the content dynamically with JS)
+// OR simply sets the expand/collapse event listeners (if the content as built on the server)
+function init(built_on_server) {
 	// list of file names to use
 	// the files must be .txt and should have the name of the DOM element's ID where their
 	// content will be written to
@@ -19,9 +20,19 @@ function init() {
 		lang_ = "EN";
 	}
 
+	// global variable used to store all the DIV elements where files are written to
+	tag_divs_ = new Array;
+
+	// if the content was built on the server, populate tag_divs_ and return
+	if (built_on_server) {
+		// loop through the files and grab a reference to the respective element
+		for (var i = 0; i < file_list.length; i++) {
+			tag_divs_[file_list[i]] = document.getElementById(file_list[i]);
+		}
+	}
+
 	// grab relevant document elements
 	tag_style_ = document.body.getElementsByTagName("style")[0];
-	tag_divs_ = new Array; // used to store all the DIV elements where files are written to
 	div_work_area_ = document.getElementById("work_area");
 
 	// global variable where all the text files' content are stored
@@ -38,10 +49,8 @@ function init() {
 	str_script_ = new String;
 	write_by_Line_ = false; // used to force the application to write line by line, instead of by character
 	re_by_line_ = new RegExp("byline", "i");
-	re_tag_content_ = new RegExp("<[\\w\\/\\s=\\'\\\"]*>", "gi");
-	re_lower_than_ = new RegExp("&lt;", "gi");
-	re_greater_than_ = new RegExp("&gt;", "gi");
-	re_encoded_html_ = new RegExp("(&lt;|&gt;)", "i");
+	str_tag_content_ = "\\w\\/\\s=\\'\\\"\\.\\:\\-";
+	re_tag_content_ = new RegExp("<[" + str_tag_content_ + "]+>", "gi");
 	tag_open_ = new Array;
 	var str_new_line = "\\r\\n";
 	re_new_line_ = new RegExp("[" + str_new_line + "]", "i");
@@ -78,8 +87,14 @@ function init() {
 		});
 	};
 
-	// start the application via the 1st file on the list
-	buildFileContent(first_file);
+	// do the final steps, either add the event listeners or start the content building
+	if (built_on_server) {
+		// add the event listeners to all the relevant elements
+		addHeaderClickEvent();
+	}else{
+		// start the application via the 1st file on the list
+		buildFileContent(first_file);
+	}
 }
 
 // grabs the content of a file
@@ -155,6 +170,15 @@ function writeToScreen(file_name, text) {
 	// check if the current character is the start of a tag
 	// process any tags until we reach a non tag character or the end of the text
 	while (cur_str.match(/\</i) != null) {
+		// check if the "<" found represents the start of a tag
+		// and if it doesn't exit the loop
+		if (text.search(re_tag_content_) != 0) {
+			// the first tag found is not at the start of cur_str OR there are no
+			// more actual tags left, i.e., this "<" is not the start of a tag
+			// so exit loop and write it as is to screen
+			break;
+		}
+
 		// grab the tag content
 		var tag_content = text.substr(num_chars_remove-1, text.indexOf(">", num_chars_remove-1) - num_chars_remove + 2);
 		var goto_char_after_tag = true;
@@ -229,13 +253,13 @@ function writeToScreen(file_name, text) {
 			str_to_write += tag_content;
 
 			// if it's a closing tag
-			var re_temp = new RegExp("<\\/[\\w\\/\\s=\\'\\\"]*>", "i");
+			var re_temp = new RegExp("<\\/[" + str_tag_content_ + "]+>", "i");
 			if (tag_content.match(re_temp) != null) {
 				// remove the last open tag in the array
 				tag_open_.pop();
 			}else{ // it's an opening tag
 				// grab the tag type and add it's length to the open tag array
-				re_temp = new RegExp("<(\\w+)[\\w\\/\\s=\\'\\\".:-]*>", "i");
+				re_temp = new RegExp("<(\\w+)[" + str_tag_content_ + "]*>", "i");
 				tag_open_.push(tag_content.match(re_temp)[1].length + 3); // add 3 for the </> characters
 			}
 		}else{ // found a "<" and it's not one of the relevant tags when writing line by line
@@ -312,19 +336,6 @@ function writeToScreen(file_name, text) {
 			// advance the index on this file
 			num_chars_remove += cur_str.length - 1;
 		}
-	}else if (cur_str == "&") { // if the current character is a &, check if it belongs to an html encoded character
-		// and if it does, grab the entire encoding
-		// only relevant if writing character by character
-		// grab what is between & and the first ; (if any)
-		var str_tmp = text.substr(num_chars_remove-1, text.indexOf(";", num_chars_remove-1) - num_chars_remove + 2);
-
-		// test for the relevant html encoded characters
-		if (str_tmp.match(re_encoded_html_) != null) {
-			// use the entire encoded character as the cur_str
-			cur_str = str_tmp;
-			// advance the index on this file
-			num_chars_remove += str_tmp.length - 1;
-		}
 	}
 
 	// if we're inside a style block see if we finished a code block, testing for a }
@@ -363,7 +374,7 @@ function writeToScreen(file_name, text) {
 	if (activate_style) {
 		// write the finished block to the correct tag
 		// replace all < and > from their html encoding to the actual characters
-		tag_style_.innerHTML += str_style_.replace(re_lower_than_, "<").replace(re_greater_than_, ">");
+		tag_style_.innerHTML += str_style_;
 		// reset the block string
 		str_style_ = "";
 
@@ -375,7 +386,7 @@ function writeToScreen(file_name, text) {
 
 		// write the finished block to the tag
 		// replace all < and > from their html encoding to the actual characters
-		tag_script.innerHTML = str_script_.replace(re_lower_than_, "<").replace(re_greater_than_, ">");
+		tag_script.innerHTML = str_script_;
 
 		// add the tag to the document
 		document.body.appendChild(tag_script);
@@ -506,7 +517,7 @@ function addStyleTags(text) {
 	// loop until we've added all necessary tags
 	while (true) {
 		// grab the index of the next style tag
-		tag_start = text.search(/\<style.*\>/i);
+		tag_start = text.search(/\<style[^\<]*\>/i);
 
 		// if we've reached the end of the text OR there are no more style tags left
 		// exit the loop
@@ -571,10 +582,10 @@ function addScriptTags(text) {
 	var tag_end = 0;
 	var str_final = new String;
 	var str_temp = new String;
-	var re_function_declaration = new RegExp("(function[\\t ]+)(\\w+[\\t ]*)\\((.*)\\)([\\t ]*{)", "gi");
+	var re_function_declaration = new RegExp("(function[\\t ]+)(\\w+[\\t ]*)\\(([^\)]*)\\)([\\t ]*{)", "gi");
 	var re_key_word = new RegExp("([\\w])?(new|while|for|break|continue|try|catch|return|if|else|typeof)([^\\w])", "gi");
 	var re_math_operator = new RegExp("([^<])(\\++|\\-+|\\*|\\/)", "gi");
-	var re_logic_operator = new RegExp("(&&|\\|\\||!=|={1,3}|&lt;|&gt;)", "gi");
+	var re_logic_operator = new RegExp("(&&|\\|\\||!=|={1,3}|<|>)", "gi");
 	var re_object = new RegExp("(Object|var|document)", "gi");
 	var re_value = new RegExp("(\\d|true|false|null)", "gi");
 	var re_method = new RegExp("\\.(\\w+)", "gi");
@@ -584,7 +595,7 @@ function addScriptTags(text) {
 	// loop until we've added all necessary tags
 	while (true) {
 		// grab the index of the next script tag
-		tag_start = text.search(/\<script.*\>/i);
+		tag_start = text.search(/\<script[^\<]*\>/i);
 
 		// if we've reached the end of the text OR there are no more script tags left
 		// exit the loop
@@ -635,21 +646,32 @@ function addScriptTags(text) {
 		// if there are any regexp in the script text
 		// first remove any of the span tags placed above from text inside regexp
 		// then add the regexp spans
-		var re_match = str_temp.match(re_regexp);
+		var re_match = str_temp.match(re_regexp); // find the 1st match of a regexp
 		if (re_match != null) {
+			// auxiliary local variable used to store the cleaned regexp
 			var str_aux = new String;
+
+			// loop until there are no more regexp to process
 			do {
+				// grab the text before the regexp (no processing needed)
 				str_aux += str_temp.substr(0, re_match.index);
+
+				// for the text inside the regexp, first remove any other color coding span tags from previous steps
 				str_aux += str_temp.substr(re_match.index, re_match[0].length).replace(re_regexp, function(string){
+					// explicitely remove any js_mathoperator span tags that may have been placed around other html tags
 					return(string.replace(/<span class='js_mathoperator'\s*>([<>]+)<\/span>/ig, "$1").replace(/<span\s+class='(css|js)_\w+'\s*>([^>]*)<\/span>/ig, "$2"));
 				}).replace(re_regexp, "$1<span class='js_regexp'>$2</span>");
 
+				// remove the processed text from the non-processed text
 				str_temp = str_temp.slice(re_match.index + re_match[0].length);
 
+				// determine the next regexp's data, if any
 				re_match = str_temp.match(re_regexp);
 			} while (re_match != null)
 
+			// add any final characters that don't need to be processed
 			str_aux += str_temp;
+			// store the final string on the original variable
 			str_temp = str_aux;
 		}
 
@@ -658,7 +680,8 @@ function addScriptTags(text) {
 		// then add the string spans
 		var re_match = str_temp.match(re_string); // find the 1st match of a string
 		if (re_match != null) {
-			var str_aux = new String; // auxiliary local variable used to store the cleaned string
+			 // auxiliary local variable used to store the cleaned string
+			var str_aux = new String;
 
 			// loop until there are no more strings to process
 			do {

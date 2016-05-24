@@ -1,4 +1,3 @@
-<goto narrator_box>
 <goto style_box>
 <script byline>function addHeaders(id) {
 	if (id == null) {
@@ -7,7 +6,7 @@
 		var elems = [tag_divs_[id]];
 	}
 
-	for (var i = 0; i &lt; elems.length; i++) {
+	for (var i = 0; i < elems.length; i++) {
 		if (elems[i].childNodes[0].className.match(/header/i) != null) {
 			continue;
 		}
@@ -44,7 +43,7 @@
 	var sum_left = 0;
 	var left_value = 0;
 
-	for (var i = 0; i &lt; collapsed_elems.length; i++) {
+	for (var i = 0; i < collapsed_elems.length; i++) {
 		collapsed_elems[i].style.top = 0;
 		left_value = sum_left + 0.5*root_font_size;
 		sum_left = left_value + parseFloat(window.getComputedStyle(collapsed_elems[i], null).width);
@@ -68,19 +67,21 @@ function textboxExpandCollapse(id, only_expand) {
 
 		header_button_elem.className = header_button_elem.className.replace(/hb_expanded/i, "hb_collapsed");
 		text_elem.className = text_elem.className.replace(/text_expanded/i, "text_collapsed");
+		textbox_elem.className += " content_collapsed";
 		header_elem.className = header_elem.className.replace(/header_expanded/i, "header_collapsed");
 
 		if (!is_paused_) { files_content_[id]["expanded"] = false; }
 
 		window.setTimeout(function() {
 			var textbox_rect = textbox_elem.getBoundingClientRect();
-			textbox_elem.className += " content_collapsed";
+			textbox_elem.style.position = "absolute";
 			textbox_elem.style.left = textbox_rect.left + "px";
 			textbox_elem.style.top = textbox_rect.top + "px";
 			positionCollapsedTextboxes();
 		}, css_transition_dur_);
 	}else if (header_button_elem.className.match(/hb_collapsed/i) != null) {
 		textbox_elem.className = textbox_elem.className.replace(/content_collapsed/i, "").trim();
+		textbox_elem.style.position = "";
 		textbox_elem.style.left = "";
 		textbox_elem.style.top = "";
 		header_elem.className = header_elem.className.replace(/header_collapsed/i, "header_expanded");
@@ -113,7 +114,7 @@ function addHeaderClickEvent(id) {
 		var elems = [tag_divs_[id]];
 	}
 
-	for (var i = 0; i &lt; elems.length; i++) {
+	for (var i = 0; i < elems.length; i++) {
 		if (elems[i].addEventListener) {
 			elems[i].addEventListener("click", function(e) { headerEventHandler(e); }, false);
 		}else if (elems[i].attachEvent){

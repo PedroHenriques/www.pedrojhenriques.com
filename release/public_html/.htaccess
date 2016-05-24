@@ -8,7 +8,9 @@ RewriteCond %{HTTP_HOST} ^pedrojhenriques.com [NC]
 RewriteRule ^(.*)$ http://www.pedrojhenriques.com/$1 [L,R=302]
 
 	#
-	# process languages
+	# process the case when the content will be built on the server and languages
 	#
 
+RewriteRule ^([^/\.]+)/complete/?$ index.php?lang=$1&complete=1 [NC,L]
+RewriteRule ^complete/?$ index.php?complete=1 [NC,L]
 RewriteRule ^([^/\.]+)/?$ index.php?lang=$1 [NC,L]
