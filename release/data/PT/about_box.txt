@@ -36,6 +36,9 @@ Eu prefiro escrever todo o código de raiz, à medida para o projecto em curso, 
 	- <b class='blue'>Book That For Me</b> (<a href='http://www.bookthatforme.com' target='_blank'>www.BookThatForMe.com</a>): Uma aplicação online grátis, que facilita a gestão de calendários entre várias pessoas.
 	Criado usando PHP, MySql e Javascript.</byline>
 
+<span class='sub_title'>Projecto Pessoal Actual:</span>
+	<byline>Um jogo 4x/estratégia no browser, inspirado pelos jogos clássicos Master of Orion e Galactic Civilization.</byline>
+
 <span class='sub_title'>Ferramentas:</span>
 	<byline>- <b class='blue'>IDE</b>: Visual Studio, Eclipse
 	- <b class='blue'>Editor de Texto</b>: Atom, Sublime Text

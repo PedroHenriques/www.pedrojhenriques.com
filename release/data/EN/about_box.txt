@@ -36,6 +36,9 @@ I prefer to write all the code myself, tailored to the project at hands, but I'm
 	- <b class='blue'>Book That For Me</b> (<a href='http://www.bookthatforme.com' target='_blank'>www.BookThatForMe.com</a>): A free online application that makes managing calendars between several people easy.
 	Built using PHP, MySql and Javascript.</byline>
 
+<span class='sub_title'>Current Personal Project:</span>
+	<byline>A browser 4x/strategy game inspired by the classic Master of Orion and Galactic Civilization games.</byline>
+
 <span class='sub_title'>Tools:</span>
 	<byline>- <b class='blue'>IDE</b>: Visual Studio, Eclipse
 	- <b class='blue'>Text Editor</b>: Atom, Sublime Text
