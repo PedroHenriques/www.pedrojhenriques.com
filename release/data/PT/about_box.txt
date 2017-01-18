@@ -37,7 +37,8 @@ Eu prefiro escrever todo o código de raiz, à medida para o projecto em curso, 
 	Criado usando PHP, MySql e Javascript.</byline>
 
 <span class='sub_title'>Projecto Pessoal Actual:</span>
-	<byline>Um jogo 4x/estratégia no browser, inspirado pelos jogos clássicos Master of Orion e Galactic Civilization.</byline>
+	<byline>Um jogo 4x/estratégia no browser, inspirado pelos jogos clássicos Master of Orion e Galactic Civilization.
+	Para mais informação <a href='http://www.pedrojhenriques.com/project4x' target='_blank'>clique aqui</a>.</byline>
 
 <span class='sub_title'>Ferramentas:</span>
 	<byline>- <b class='blue'>IDE</b>: Visual Studio, Eclipse

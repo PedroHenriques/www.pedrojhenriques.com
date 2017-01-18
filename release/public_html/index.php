@@ -7,8 +7,14 @@ error_reporting(0);
 require(dirname(dirname(__FILE__))."/code/functions.php");
 
 // grab the language, if any
-// defaults to english
-$lang = (isset($_GET["lang"]) ? strtoupper($_GET["lang"]) : "EN");
+$lang = (isset($_GET["lang"]) ? strtoupper($_GET["lang"]) : "");
+
+// validate the language
+if ($lang === "" || !is_dir("../data/{$lang}") || !file_exists("../data/{$lang}")) {
+	// not valid
+	// default to english
+	$lang = "EN";
+}
 
 // get the info for index.php from the respective JSON file
 $json_file = file_get_contents("../data/index_info.json");

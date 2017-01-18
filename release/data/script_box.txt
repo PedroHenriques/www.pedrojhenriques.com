@@ -111,7 +111,7 @@ function addHeaderClickEvent(id) {
 	if (id == null) {
 		var elems = document.querySelectorAll("div.header_button");
 	}else{
-		var elems = [tag_divs_[id]];
+		var elems = [tag_divs_[id].querySelector("div.header_button")];
 	}
 
 	for (var i = 0; i < elems.length; i++) {

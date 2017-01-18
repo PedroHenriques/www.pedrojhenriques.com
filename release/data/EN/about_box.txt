@@ -37,7 +37,8 @@ I prefer to write all the code myself, tailored to the project at hands, but I'm
 	Built using PHP, MySql and Javascript.</byline>
 
 <span class='sub_title'>Current Personal Project:</span>
-	<byline>A browser 4x/strategy game inspired by the classic Master of Orion and Galactic Civilization games.</byline>
+	<byline>A browser 4x/strategy game inspired by the classic Master of Orion and Galactic Civilization games.
+	For more information <a href='http://www.pedrojhenriques.com/project4x' target='_blank'>click here</a>.</byline>
 
 <span class='sub_title'>Tools:</span>
 	<byline>- <b class='blue'>IDE</b>: Visual Studio, Eclipse
