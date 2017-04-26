@@ -79,33 +79,23 @@ Ah...muito melhor!
 
 Esta caixa de texto está a ficar muito cheia!
 Está na altura de criar uma nova caixa para os estilos.
-
-<script>createElem("style_box");</script>
-
+<goto style_box>
 Vamos testá-la.
 <goto style_box>
-
 Antes de avançar para a próxima etapa, vou precisar de uma caixa para escrever código JavaScript.
-
-<script>createElem("script_box");</script>
-
+<goto script_box>
 E alguma cor para o texto de JavaScript.
 <goto style_box>
-
 Está na altura de dar a cada caixa um cabeçalho, para conseguirmos saber que caixa é qual.
 <goto script_box>
-
 E depois alguma funcionalidade para esses cabeçalhos.
 <goto script_box>
-
 Enquanto esta aplicação estiver a correr não poderá expandir ou colapsar as caixas de texto, mas pode parar a qualquer momento!
 
 Já não vai ser preciso aplicar mais estilos, por isso vamos colapsar a caixa de estilos para libertar algum espaço no ecrã.
 <goto script_box>
-
 E para concluir esta apresentação, deixe-me contar-lhe um pouco mais sobre mim.
-<goto script_box>
-
+<goto about_box>
 Obrigado por visitar o meu site!
 Espero que tenha gostado tanto como eu gostei de o fazer.
 

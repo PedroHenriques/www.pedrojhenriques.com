@@ -1,4 +1,4 @@
-<h1>Pedro Henriques</h1>
+<goto script_box><h1>Pedro Henriques</h1>
 Programmer since 2003.
 
 My programming career started as a hobby and with small personal projects. With time I started to appreciate the power of programming to help optimize and automate nearly every aspect of company's operations. This led me to grow my hobby into a full time job and career.
@@ -13,20 +13,17 @@ I love all aspects of programming and I'm always searching for the next challeng
 
 
 <span class='sub_title'>The programming languages I'm familiar with are:</span>
-	<byline>- C/C++
+	<byline>- Python
 	- C#
-	- Java
-	- Python
+	- C++
 	- Ruby
 	- Visual Basic (VB) and Visual Basic for Applications (VBA)
 
 	- PHP
-	- ASP
 	- JavaScript</byline>
 
 I prefer to write all the code myself, tailored to the project at hands, but I'm also familiar with several frameworks and libraries, such as:
-	<byline>- Rails (Ruby on Rails)
-	- Laravel
+	<byline>- CodeIgniter
 	- Jquery</byline>
 
 <span class='sub_title'>Selected Projects:</span>
@@ -45,8 +42,7 @@ I prefer to write all the code myself, tailored to the project at hands, but I'm
 	- <b class='blue'>Text Editor</b>: Atom, Sublime Text
 
 	- <b class='blue'>VCS</b>: Git
-	- <b class='blue'>Pre-processor</b>: SASS, LESS
+	- <b class='blue'>Pre-processor</b>: TypeScript, SASS, LESS
 	- <b class='blue'>CSS/JS Minimizer</b>: <a href='https://github.com/PedroHenriques/Minimizer_CSS-JS' target='_blank'>github.com/PedroHenriques/Minimizer_CSS-JS</a></byline>
 
-You can find links with more information about myself and my work at the bottom of the page.
-<goto narrator_box>
+You can find links with more information about myself and my work at the bottom of the page.<goto narrator_box>

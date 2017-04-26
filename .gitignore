@@ -1,3 +1,4 @@
-_notes/
-*.enex
-git.bat
+node_modules
+assets/js
+minimizer_watch.txt
+minimizer_ignore.txt

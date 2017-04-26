@@ -79,33 +79,23 @@ There...much better!
 
 This text box is becoming very crowded!
 Time to create a new box for the styles.
-
-<script>createElem("style_box");</script>
-
+<goto style_box>
 Lets test it.
 <goto style_box>
-
 Before I do the next step, I'll need a box to write JavaScript code.
-
-<script>createElem("script_box");</script>
-
+<goto script_box>
 And some color coding for the JavaScript text.
 <goto style_box>
-
 Time to give each box a header, so we can keep track of which box is which.
 <goto script_box>
-
 And then some functionality to those headers.
 <goto script_box>
-
 While the application is running you can't expand or collapse the text boxes, but you can pause at any time!
 
 We are done styling, so let's collapse the style box to clear some space on the screen.
 <goto script_box>
-
 And to conclude this presentation let me tell you a little bit more about myself.
-<goto script_box>
-
+<goto about_box>
 Thank you for visiting my website!
 Hope you enjoyed it as much as I enjoyed making it.
 

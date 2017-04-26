@@ -1,13 +1,12 @@
-<goto style_box>
-<script byline>function addHeaders(id) {
-	if (id == null) {
+<goto narrator_box><goto style_box><script byline>function addHeaders(id) {
+	if (id == undefined || id.length == 0) {
 		var elems = document.querySelectorAll("div.content");
 	}else{
-		var elems = [tag_divs_[id]];
+		var elems = [document.getElementById(id)];
 	}
 
 	for (var i = 0; i < elems.length; i++) {
-		if (elems[i].childNodes[0].className.match(/header/i) != null) {
+		if (elems[i].childNodes[0].classList.contains("header")) {
 			continue;
 		}
 
@@ -24,16 +23,14 @@
 		elems[i].insertBefore(header_div, elems[i].childNodes[0]);
 
 		if (typeof addHeaderClickEvent == "function") {
-			addHeaderClickEvent(id);
+			addHeaderClickEvent(elems[i].id);
 		}
 	}
-	scrollBoxesToBottom();
+	engine_obj_.scrollBoxesToBottom();
 }</script>
 <goto style_box>
-
 <script>addHeaders();</script>
 <goto narrator_box>
-
 <script byline>function positionCollapsedTextboxes() {
 	var collapsed_elems = document.querySelectorAll("div.content_collapsed");
 
@@ -53,24 +50,29 @@
 }
 
 function textboxExpandCollapse(id, only_expand) {
-	var textbox_elem = tag_divs_[id];
+	var textbox_elem = engine_obj_.text_box_objs[id].textbox_elem;
 	var header_elem = textbox_elem.firstElementChild;
 	var header_button_elem = header_elem.lastElementChild;
 	var text_elem = textbox_elem.lastElementChild;
+	var textbox_elem_classes = textbox_elem.classList;
+	var header_elem_classes = header_elem.classList;
+	var header_button_classes = header_button_elem.classList;
+	var work_area_classes = div_work_area_.classList;
+	var text_elem_classes = text_elem.classList;
 
-	if (css_transition_dur_ == null) { getTransitionDuration(); }
+	if (css_transition_dur_ === null) { getTransitionDuration(); }
 
-	if (header_button_elem.className.match(/hb_expanded/i) != null && !only_expand) {
-		if (div_work_area_.className.match(/work_area_collapsed/i) == null) {
-			div_work_area_.className += " work_area_collapsed";
-		}
+	if (!only_expand && header_button_classes.contains("hb_expanded")) {
+		work_area_classes.add("work_area_collapsed");
+		header_button_classes.add("hb_collapsed");
+		header_button_classes.remove("hb_expanded");
+		text_elem_classes.add("text_collapsed");
+		text_elem_classes.remove("text_expanded");
+		textbox_elem_classes.add("content_collapsed");
+		header_elem_classes.add("header_collapsed");
+		header_elem_classes.remove("header_expanded");
 
-		header_button_elem.className = header_button_elem.className.replace(/hb_expanded/i, "hb_collapsed");
-		text_elem.className = text_elem.className.replace(/text_expanded/i, "text_collapsed");
-		textbox_elem.className += " content_collapsed";
-		header_elem.className = header_elem.className.replace(/header_expanded/i, "header_collapsed");
-
-		if (!is_paused_) { files_content_[id]["expanded"] = false; }
+		engine_obj_.setTextboxState(id, false);
 
 		window.setTimeout(function() {
 			var textbox_rect = textbox_elem.getBoundingClientRect();
@@ -79,24 +81,27 @@ function textboxExpandCollapse(id, only_expand) {
 			textbox_elem.style.top = textbox_rect.top + "px";
 			positionCollapsedTextboxes();
 		}, css_transition_dur_);
-	}else if (header_button_elem.className.match(/hb_collapsed/i) != null) {
-		textbox_elem.className = textbox_elem.className.replace(/content_collapsed/i, "").trim();
+	}else if (header_button_classes.contains("hb_collapsed")) {
+		textbox_elem_classes.remove("content_collapsed");
 		textbox_elem.style.position = "";
 		textbox_elem.style.left = "";
 		textbox_elem.style.top = "";
-		header_elem.className = header_elem.className.replace(/header_collapsed/i, "header_expanded");
-		text_elem.className = text_elem.className.replace(/text_collapsed/i, "text_expanded");
-		header_button_elem.className = header_button_elem.className.replace(/hb_collapsed/i, "hb_expanded");
+		header_elem_classes.add("header_expanded");
+		header_elem_classes.remove("header_collapsed");
+		text_elem_classes.add("text_expanded");
+		text_elem_classes.remove("text_collapsed");
+		header_button_classes.add("hb_expanded");
+		header_button_classes.remove("hb_collapsed");
 
 		if (document.querySelectorAll("div.hb_collapsed").length == 0) {
-			div_work_area_.className = div_work_area_.className.replace(/work_area_collapsed/i, "").trim();
+			work_area_classes.remove("work_area_collapsed");
 		}
 
-		if (!is_paused_) { files_content_[id]["expanded"] = true; }
+		engine_obj_.setTextboxState(id, true);
 		positionCollapsedTextboxes();
 
 		window.setTimeout(function() {
-			scrollBoxesToBottom(id);
+			engine_obj_.scrollBoxesToBottom([id]);
 		}, css_transition_dur_);
 	}
 }
@@ -108,10 +113,10 @@ function headerEventHandler(e) {
 }
 
 function addHeaderClickEvent(id) {
-	if (id == null) {
+	if (id == undefined || id.length == 0) {
 		var elems = document.querySelectorAll("div.header_button");
 	}else{
-		var elems = [tag_divs_[id].querySelector("div.header_button")];
+		var elems = [document.getElementById(id).querySelector("div.header_button")];
 	}
 
 	for (var i = 0; i < elems.length; i++) {
@@ -125,10 +130,6 @@ function addHeaderClickEvent(id) {
 
 addHeaderClickEvent();</script>
 <goto narrator_box>
-
 <script>textboxExpandCollapse("style_box", false);</script>
 <goto narrator_box>
-
-<script>createElem("about_box");</script>
-<script>textboxExpandCollapse("script_box", false);</script>
-<goto about_box>
+<script>textboxExpandCollapse("script_box", false);</script><goto about_box>

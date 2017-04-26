@@ -1,0 +1,23 @@
+{
+	"compileOnSave": false,
+
+    "compilerOptions": {
+        "module": "CommonJS",
+        "target": "es5",
+		"outDir" : "assets/js",
+		"alwaysStrict" : true,
+		"noEmitOnError" : true,
+		"noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+		"noFallthroughCasesInSwitch" : true,
+		"strictNullChecks": true,
+        "sourceMap": false,
+		"declaration": true,
+		"declarationDir": "assets/ts/declarations",
+		"types": ["es6-promise"],
+		"watch": false
+    },
+
+	"include" : ["assets/ts/*.ts"]
+}
