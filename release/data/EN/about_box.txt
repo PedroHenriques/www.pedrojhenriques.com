@@ -22,9 +22,9 @@ I love all aspects of programming and I'm always searching for the next challeng
 	- PHP
 	- JavaScript</byline>
 
-I prefer to write all the code myself, tailored to the project at hands, but I'm also familiar with several frameworks and libraries, such as:
-	<byline>- CodeIgniter
-	- Jquery</byline>
+Besides writing code from scratch, using only the language built-in libraries, I also have experience with several third party frameworks, such as:
+	<byline>- Symfony
+	- Laravel</byline>
 
 <span class='sub_title'>Selected Projects:</span>
 	<byline>- <b class='blue'>Turn On Consulting</b> (<a href='http://www.turnonconsulting.com' target='_blank'>www.TurnOnConsulting.com</a>): A consulting company focused on optimization to turn on companies' internal performance.
@@ -39,10 +39,11 @@ I prefer to write all the code myself, tailored to the project at hands, but I'm
 
 <span class='sub_title'>Tools:</span>
 	<byline>- <b class='blue'>IDE</b>: Visual Studio, Eclipse
-	- <b class='blue'>Text Editor</b>: Atom, Sublime Text
+	- <b class='blue'>Text Editor</b>: Visual Studio Code, Atom
 
 	- <b class='blue'>VCS</b>: Git
-	- <b class='blue'>Pre-processor</b>: TypeScript, SASS, LESS
-	- <b class='blue'>CSS/JS Minimizer</b>: <a href='https://github.com/PedroHenriques/Minimizer_CSS-JS' target='_blank'>github.com/PedroHenriques/Minimizer_CSS-JS</a></byline>
+	- <b class='blue'>Pre-processors</b>: TypeScript, SASS
+	- <b class='blue'>Testing</b>: PHPUnit, Mocha
+	- <b class='blue'>Bundler</b>: <a href='https://github.com/PedroHenriques/Web_Bundler_Minimizer' target='_blank'>github.com/PedroHenriques/Web_Bundler_Minimizer</a></byline>
 
 You can find links with more information about myself and my work at the bottom of the page.<goto narrator_box>
