@@ -43,7 +43,7 @@ Para além de escrever código do zero, usando apenas as bibliotecas standard da
 
 	- <b class='blue'>SCV</b>: Git
 	- <b class='blue'>Pré-processadores</b>: TypeScript, SASS
-	- <b class='blue'>Testes</b>: PHPUnit, Mocha
+	- <b class='blue'>Testes</b>: <a href='https://phpunit.de/' target='_blank'>PHPUnit</a>, <a href='https://mochajs.org/' target='_blank'>Mocha</a>, <a href='http://mink.behat.org/en/latest/' target='_blank'>Mink</a>, <a href='http://chaijs.com/' target='_blank'>Chai</a>
 	- <b class='blue'>Bundler</b>: <a href='https://github.com/PedroHenriques/Web_Bundler_Minimizer' target='_blank'>github.com/PedroHenriques/Web_Bundler_Minimizer</a></byline>
 
 Pode encontrar links, com mais informação sobre mim e o meu trabalho, no fundo da página.<goto narrator_box>
