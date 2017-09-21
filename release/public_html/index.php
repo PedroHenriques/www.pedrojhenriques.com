@@ -96,7 +96,7 @@ if ($with_content) {
             </div>
             <div id='footer_links'>
                 <a <?php echo("href='http://www.linkedin.com/in/pedrojhenriques/".strtolower($lang)."'"); ?> target='_blank'>LinkedIn</a>
-                <a href='https://codepen.io/PedroHenriques/' target='_blank'>CodePen</a>
+                <a href='https://www.npmjs.com/~pedrohenriques' target='_blank'>NPM</a>
                 <a href='https://github.com/PedroHenriques/' target='_blank'>GitHub</a>
                 <a href='https://github.com/PedroHenriques/www.pedrojhenriques.com' target='_blank'><?php echo($json_a["source_code"][$lang]); ?></a>
             </div>
