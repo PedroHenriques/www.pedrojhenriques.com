@@ -13,18 +13,18 @@ I love all aspects of programming and I'm always searching for the next challeng
 
 
 <span class='sub_title'>The programming languages I'm familiar with are:</span>
-	<byline>- Python
+	<byline>- PHP
+	- JavaScript (browser and nodejs)
+	- Python
 	- C#
 	- C++
 	- Ruby
-	- Visual Basic (VB) and Visual Basic for Applications (VBA)
+	- Visual Basic (VB) and Visual Basic for Applications (VBA)</byline>
 
-	- PHP
-	- JavaScript</byline>
-
-Besides writing code from scratch, using only the language built-in libraries, I also have experience with several third party frameworks, such as:
-	<byline>- Symfony
-	- Laravel</byline>
+Besides writing code from scratch, using only the language built-in libraries, I also have experience with several third party frameworks and libraries, such as:
+	<byline>- <a href='https://symfony.com/' target='_blank'>Symfony</a>
+	- <a href='https://facebook.github.io/react/' target='_blank'>ReactJS</a>
+	- <a href='https://laravel.com/' target='_blank'>Laravel</a></byline>
 
 <span class='sub_title'>Selected Projects:</span>
 	<byline>- <b class='blue'>Turn On Consulting</b> (<a href='http://www.turnonconsulting.com' target='_blank'>www.TurnOnConsulting.com</a>): A consulting company focused on optimization to turn on companies' internal performance.
@@ -42,7 +42,7 @@ Besides writing code from scratch, using only the language built-in libraries, I
 	- <b class='blue'>Text Editor</b>: Visual Studio Code, Atom
 
 	- <b class='blue'>VCS</b>: Git
-	- <b class='blue'>Pre-processors</b>: TypeScript, SASS
+	- <b class='blue'>Pre-processors</b>: <a href='https://www.typescriptlang.org/' target='_blank'>TypeScript</a>, <a href='http://sass-lang.com/' target='_blank'>SASS</a>
 	- <b class='blue'>Testing</b>: <a href='https://phpunit.de/' target='_blank'>PHPUnit</a>, <a href='https://mochajs.org/' target='_blank'>Mocha</a>, <a href='http://mink.behat.org/en/latest/' target='_blank'>Mink</a>, <a href='http://chaijs.com/' target='_blank'>Chai</a>
 	- <b class='blue'>Bundler</b>: <a href='https://github.com/PedroHenriques/Web_Bundler_Minimizer' target='_blank'>github.com/PedroHenriques/Web_Bundler_Minimizer</a></byline>
 
