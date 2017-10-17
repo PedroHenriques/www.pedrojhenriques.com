@@ -16,8 +16,6 @@ I love all aspects of programming and I'm always searching for the next challeng
 	<byline>- PHP
 	- JavaScript (browser and nodejs)
 	- Python
-	- C#
-	- C++
 	- Ruby
 	- Visual Basic (VB) and Visual Basic for Applications (VBA)</byline>
 
@@ -38,12 +36,12 @@ Besides writing code from scratch, using only the language built-in libraries, I
 	For more information <a href='http://www.pedrojhenriques.com/project4x' target='_blank'>click here</a>.</byline>
 
 <span class='sub_title'>Tools:</span>
-	<byline>- <b class='blue'>IDE</b>: Visual Studio, Eclipse
+	<byline>- <b class='blue'>IDE</b>: Visual Studio
 	- <b class='blue'>Text Editor</b>: Visual Studio Code, Atom
 
 	- <b class='blue'>VCS</b>: Git
 	- <b class='blue'>Pre-processors</b>: <a href='https://www.typescriptlang.org/' target='_blank'>TypeScript</a>, <a href='http://sass-lang.com/' target='_blank'>SASS</a>
-	- <b class='blue'>Testing</b>: <a href='https://phpunit.de/' target='_blank'>PHPUnit</a>, <a href='https://mochajs.org/' target='_blank'>Mocha</a>, <a href='http://mink.behat.org/en/latest/' target='_blank'>Mink</a>, <a href='http://chaijs.com/' target='_blank'>Chai</a>
+	- <b class='blue'>Testing</b>: <a href='https://phpunit.de/' target='_blank'>PHPUnit</a>, <a href='https://mochajs.org/' target='_blank'>Mocha</a>, <a href='http://mink.behat.org/en/latest/' target='_blank'>Mink</a>, <a href='http://chaijs.com/' target='_blank'>Chai</a>, <a href='http://sinonjs.org/' target='_blank'>SinonJS</a>
 	- <b class='blue'>Bundler</b>: <a href='https://github.com/PedroHenriques/Web_Bundler_Minimizer' target='_blank'>github.com/PedroHenriques/Web_Bundler_Minimizer</a></byline>
 
 You can find links with more information about myself and my work at the bottom of the page.<goto narrator_box>
