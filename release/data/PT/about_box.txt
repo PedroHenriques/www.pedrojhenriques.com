@@ -20,15 +20,15 @@ Eu adoro todos os aspectos de programação e estou sempre à procura do próxim
 	- Visual Basic (VB) e Visual Basic for Applications (VBA)</byline>
 
 Para além de escrever código do zero, usando apenas as bibliotecas standard das linguagens, eu também tenho experiência com várias frameworks e bibliotecas externas, como por exemplo:
-	<byline>- <a href='https://symfony.com/' target='_blank'>Symfony</a>
+	<byline>- <a href='https://laravel.com/' target='_blank'>Laravel</a>
 	- <a href='https://facebook.github.io/react/' target='_blank'>ReactJS</a>
-	- <a href='https://laravel.com/' target='_blank'>Laravel</a></byline>
+	- <a href='https://symfony.com/' target='_blank'>Symfony</a></byline>
 
 <span class='sub_title'>Projectos Seleccionados:</span>
 	<byline>- <b class='blue'>Turn On Consulting</b> (<a href='http://www.turnonconsulting.com' target='_blank'>www.TurnOnConsulting.com</a>): Uma empresa de consultoria focada em optimizações para aumentar a performance interna de empresas.
 	Criado usando PHP e Javascript.
 
-	- <b class='blue'>Book That For Me</b> (<a href='http://www.bookthatforme.com' target='_blank'>www.BookThatForMe.com</a>): Uma aplicação online grátis, que facilita a gestão de calendários entre várias pessoas.
+	- <b class='blue'>Colecção de Jogos de Browser</b> (<a href='http://www.pedrojhenriques.com/games' target='_blank'>www.pedrojhenriques.com/games</a>): Uma colecção de jogos que pode jogar directamente no seu browser, com mais em desenvolvimento.
 	Criado usando PHP, MySql e Javascript.</byline>
 
 <span class='sub_title'>Projecto Pessoal Actual:</span>
@@ -36,12 +36,12 @@ Para além de escrever código do zero, usando apenas as bibliotecas standard da
 	Para mais informação <a href='http://www.pedrojhenriques.com/project4x' target='_blank'>clique aqui</a>.</byline>
 
 <span class='sub_title'>Ferramentas:</span>
-	<byline>- <b class='blue'>IDE</b>: Visual Studio
-	- <b class='blue'>Editor de Texto</b>: Visual Studio Code, Atom
+	<byline>- <b class='blue'>IDE</b>: <a href='https://www.visualstudio.com/vs/' target='_blank'>Visual Studio</a>
+	- <b class='blue'>Editor de Texto</b>: <a href='https://code.visualstudio.com/' target='_blank'>Visual Studio Code</a>, <a href='https://atom.io/' target='_blank'>Atom</a>
 
-	- <b class='blue'>SCV</b>: Git
+	- <b class='blue'>SCV</b>: <a href='https://git-scm.com/' target='_blank'>Git</a>
 	- <b class='blue'>Pré-processadores</b>: <a href='https://www.typescriptlang.org/' target='_blank'>TypeScript</a>, <a href='http://sass-lang.com/' target='_blank'>SASS</a>
 	- <b class='blue'>Testes</b>: <a href='https://phpunit.de/' target='_blank'>PHPUnit</a>, <a href='https://mochajs.org/' target='_blank'>Mocha</a>, <a href='http://mink.behat.org/en/latest/' target='_blank'>Mink</a>, <a href='http://chaijs.com/' target='_blank'>Chai</a>, <a href='http://sinonjs.org/' target='_blank'>SinonJS</a>
-	- <b class='blue'>Bundler</b>: <a href='https://github.com/PedroHenriques/Web_Bundler_Minimizer' target='_blank'>github.com/PedroHenriques/Web_Bundler_Minimizer</a></byline>
+	- <b class='blue'>Bundler</b>: <a href='https://webpack.js.org/' target='_blank'>Webpack</a></byline>
 
 Pode encontrar links, com mais informação sobre mim e o meu trabalho, no fundo da página.<goto narrator_box>

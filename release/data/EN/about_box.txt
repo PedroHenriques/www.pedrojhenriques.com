@@ -20,15 +20,15 @@ I love all aspects of programming and I'm always searching for the next challeng
 	- Visual Basic (VB) and Visual Basic for Applications (VBA)</byline>
 
 Besides writing code from scratch, using only the language built-in libraries, I also have experience with several third party frameworks and libraries, such as:
-	<byline>- <a href='https://symfony.com/' target='_blank'>Symfony</a>
+	<byline>- <a href='https://laravel.com/' target='_blank'>Laravel</a>
 	- <a href='https://facebook.github.io/react/' target='_blank'>ReactJS</a>
-	- <a href='https://laravel.com/' target='_blank'>Laravel</a></byline>
+	- <a href='https://symfony.com/' target='_blank'>Symfony</a></byline>
 
 <span class='sub_title'>Selected Projects:</span>
 	<byline>- <b class='blue'>Turn On Consulting</b> (<a href='http://www.turnonconsulting.com' target='_blank'>www.TurnOnConsulting.com</a>): A consulting company focused on optimization to turn on companies' internal performance.
 	Built using PHP and Javascript.
 
-	- <b class='blue'>Book That For Me</b> (<a href='http://www.bookthatforme.com' target='_blank'>www.BookThatForMe.com</a>): A free online application that makes managing calendars between several people easy.
+	- <b class='blue'>Browser Game Collection</b> (<a href='http://www.pedrojhenriques.com/games' target='_blank'>www.pedrojhenriques.com/games</a>): A collection of games you can play directly on your browser, with more under development.
 	Built using PHP, MySql and Javascript.</byline>
 
 <span class='sub_title'>Current Personal Project:</span>
@@ -36,12 +36,12 @@ Besides writing code from scratch, using only the language built-in libraries, I
 	For more information <a href='http://www.pedrojhenriques.com/project4x' target='_blank'>click here</a>.</byline>
 
 <span class='sub_title'>Tools:</span>
-	<byline>- <b class='blue'>IDE</b>: Visual Studio
-	- <b class='blue'>Text Editor</b>: Visual Studio Code, Atom
+	<byline>- <b class='blue'>IDE</b>: <a href='https://www.visualstudio.com/vs/' target='_blank'>Visual Studio</a>
+	- <b class='blue'>Text Editor</b>: <a href='https://code.visualstudio.com/' target='_blank'>Visual Studio Code</a>, <a href='https://atom.io/' target='_blank'>Atom</a>
 
-	- <b class='blue'>VCS</b>: Git
+	- <b class='blue'>VCS</b>: <a href='https://git-scm.com/' target='_blank'>Git</a>
 	- <b class='blue'>Pre-processors</b>: <a href='https://www.typescriptlang.org/' target='_blank'>TypeScript</a>, <a href='http://sass-lang.com/' target='_blank'>SASS</a>
 	- <b class='blue'>Testing</b>: <a href='https://phpunit.de/' target='_blank'>PHPUnit</a>, <a href='https://mochajs.org/' target='_blank'>Mocha</a>, <a href='http://mink.behat.org/en/latest/' target='_blank'>Mink</a>, <a href='http://chaijs.com/' target='_blank'>Chai</a>, <a href='http://sinonjs.org/' target='_blank'>SinonJS</a>
-	- <b class='blue'>Bundler</b>: <a href='https://github.com/PedroHenriques/Web_Bundler_Minimizer' target='_blank'>github.com/PedroHenriques/Web_Bundler_Minimizer</a></byline>
+	- <b class='blue'>Bundler</b>: <a href='https://webpack.js.org/' target='_blank'>Webpack</a></byline>
 
 You can find links with more information about myself and my work at the bottom of the page.<goto narrator_box>
