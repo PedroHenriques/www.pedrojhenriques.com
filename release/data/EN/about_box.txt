@@ -6,7 +6,7 @@ My programming career started as a hobby and with small personal projects. With 
 I love all aspects of programming and I'm always searching for the next challenge!
 
 <span class='sub_title'>Availability:</span>
-	- Currently I'm available for freelance work.
+	- Currently I'm looking for the next challenge.
 
 <span class='sub_title'>Contacts:</span>
 	<speed default>- pedro@pedrojhenriques.com</speed>
@@ -17,21 +17,19 @@ I love all aspects of programming and I'm always searching for the next challeng
 	- JavaScript (browser and NodeJS)</byline>
 
 Besides writing code from scratch, using only the language built-in libraries, I also have experience with several third party frameworks and libraries, such as:
-	<byline>- <a href='https://laravel.com/' target='_blank'>Laravel</a>
-	- <a href='https://facebook.github.io/react/' target='_blank'>ReactJS</a>
+	<byline>- <a href='https://facebook.github.io/react/' target='_blank'>ReactJS</a>
 	- <a href='https://redux.js.org/' target='_blank'>Redux</a>
+	- <a href='https://laravel.com/' target='_blank'>Laravel</a>
+	- <a href='https://lumen.laravel.com/' target='_blank'>Lumen</a>
 	- <a href='https://symfony.com/' target='_blank'>Symfony</a></byline>
 
 <span class='sub_title'>Selected Projects:</span>
-	<byline>- <b class='blue'>Turn On Consulting</b> (<a href='http://www.turnonconsulting.com' target='_blank'>www.TurnOnConsulting.com</a>): A consulting company focused on optimization to turn on companies' internal performance.
-	Built using PHP and JavaScript.
-
-	- <b class='blue'>Browser Game Collection</b> (<a href='http://www.pedrojhenriques.com/games' target='_blank'>www.pedrojhenriques.com/games</a>): A collection of games you can play directly on your browser, with more under development.
-	Built using PHP, MySql and JavaScript.</byline>
+	<byline>- <b class='blue'>Browser Game Collection</b> (<a href='http://www.pedrojhenriques.com/games' target='_blank'>www.pedrojhenriques.com/games</a>): A collection of games you can play directly on your browser, with more under development.</byline>
 
 <span class='sub_title'>Current Personal Project:</span>
 	<byline>A browser 4x/strategy game inspired by the classic Master of Orion and Galactic Civilization games.
-	For more information <a href='http://www.pedrojhenriques.com/project4x' target='_blank'>click here</a>.</byline>
+	For more information <a href='http://www.pedrojhenriques.com/project4x' target='_blank'>click here</a>.
+	Technologies being used: <a href='https://facebook.github.io/react/' target='_blank'>ReactJS</a>, <a href='https://redux.js.org/' target='_blank'>Redux</a>, <a href='https://lumen.laravel.com/' target='_blank'>Lumen</a>.</byline>
 
 <span class='sub_title'>Tools:</span>
 	<byline>- <b class='blue'>Text Editor</b>: <a href='https://code.visualstudio.com/' target='_blank'>Visual Studio Code</a>

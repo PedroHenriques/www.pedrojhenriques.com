@@ -6,7 +6,7 @@ A minha carreira de programador começou como um hobby e com pequenos projectos 
 Eu adoro todos os aspectos de programação e estou sempre à procura do próximo desafio!
 
 <span class='sub_title'>Disponibilidade:</span>
-	- Actualmente estou disponível para trabalho freelance.
+	- Actualmente estou há procura do próximo desafio.
 
 <span class='sub_title'>Contactos:</span>
 	<speed default>- pedro@pedrojhenriques.com</speed>
@@ -17,21 +17,19 @@ Eu adoro todos os aspectos de programação e estou sempre à procura do próxim
 	- JavaScript (browser e NodeJS)</byline>
 
 Para além de escrever código do zero, usando apenas as bibliotecas standard das linguagens, eu também tenho experiência com várias frameworks e bibliotecas externas, como por exemplo:
-	<byline>- <a href='https://laravel.com/' target='_blank'>Laravel</a>
-	- <a href='https://facebook.github.io/react/' target='_blank'>ReactJS</a>
+	<byline>- <a href='https://facebook.github.io/react/' target='_blank'>ReactJS</a>
 	- <a href='https://redux.js.org/' target='_blank'>Redux</a>
+	- <a href='https://laravel.com/' target='_blank'>Laravel</a>
+	- <a href='https://lumen.laravel.com/' target='_blank'>Lumen</a>
 	- <a href='https://symfony.com/' target='_blank'>Symfony</a></byline>
 
 <span class='sub_title'>Projectos Seleccionados:</span>
-	<byline>- <b class='blue'>Turn On Consulting</b> (<a href='http://www.turnonconsulting.com' target='_blank'>www.TurnOnConsulting.com</a>): Uma empresa de consultoria focada em optimizações para aumentar a performance interna de empresas.
-	Criado usando PHP e JavaScript.
-
-	- <b class='blue'>Colecção de Jogos de Browser</b> (<a href='http://www.pedrojhenriques.com/games' target='_blank'>www.pedrojhenriques.com/games</a>): Uma colecção de jogos que pode jogar directamente no seu browser, com mais em desenvolvimento.
-	Criado usando PHP, MySql e JavaScript.</byline>
+	<byline>- <b class='blue'>Colecção de Jogos de Browser</b> (<a href='http://www.pedrojhenriques.com/games' target='_blank'>www.pedrojhenriques.com/games</a>): Uma colecção de jogos que pode jogar directamente no seu browser, com mais em desenvolvimento.</byline>
 
 <span class='sub_title'>Projecto Pessoal Actual:</span>
 	<byline>Um jogo 4x/estratégia no browser, inspirado pelos jogos clássicos Master of Orion e Galactic Civilization.
-	Para mais informação <a href='http://www.pedrojhenriques.com/project4x' target='_blank'>clique aqui</a>.</byline>
+	Para mais informação <a href='http://www.pedrojhenriques.com/project4x' target='_blank'>clique aqui</a>.
+	Tecnologias a serem usadas: <a href='https://facebook.github.io/react/' target='_blank'>ReactJS</a>, <a href='https://redux.js.org/' target='_blank'>Redux</a>, <a href='https://lumen.laravel.com/' target='_blank'>Lumen</a>.</byline>
 
 <span class='sub_title'>Ferramentas:</span>
 	<byline>- <b class='blue'>IDE</b>: <a href='https://www.visualstudio.com/vs/' target='_blank'>Visual Studio</a>
