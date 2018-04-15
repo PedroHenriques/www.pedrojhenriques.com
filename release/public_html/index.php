@@ -85,7 +85,7 @@ if ($with_content) {
 				if (!$is_bot) {
 					// it didn't, so print the "skip" button to the footer
 					echo("
-                	<a class='clickable' href='http://pedrojhenriques.com/".$lang."/complete' target='_self'>".$json_a["skip"][$lang]."</a>
+                	<a class='clickable' href='/".$lang."/complete' target='_self'>".$json_a["skip"][$lang]."</a>
 					");
 				}
 				?>
